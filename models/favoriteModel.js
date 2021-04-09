@@ -5,8 +5,8 @@ const getFavorite = async (id) => {
   return favorite;
 };
 
-const addFavorite = async (fav) => {
-  const { id_favorite, name, url_image, user_id } = fav;
+const addFavorite = async (favorite) => {
+  const { id_favorite, name, url_image, user_id } = favorite;
   return connection.query('INSERT INTO favorite (id_favorite, name, url_image, user_id) VALUES (?, ?, ?, ?)', [id_favorite, name, url_image, user_id])
   .then((result) => result[0]);
 };

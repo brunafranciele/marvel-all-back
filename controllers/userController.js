@@ -30,6 +30,7 @@ UserRouter.post('/login', validateLogin, async (req, res, next) => {
         name: user[0].name,
         email: user[0].email,
         id: user[0].id,
+        password: user[0].password,
       });
   } catch (error) {
     next(error);

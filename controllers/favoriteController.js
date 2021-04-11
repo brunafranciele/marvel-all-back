@@ -8,11 +8,12 @@ FavoriteRouter.get('/:id', async (req, res) => {
   return res.status(200).json(favorite);
 });
 FavoriteRouter.post('/', FavoriteValidation, async (req, res) => {
-  const { id_favorite, name, url_image, user_id } = req.body;
-  const fav = { id_favorite, name, url_image, user_id };
+  const { id_favorite, name, url_image, related, user_id } = req.body;
+  const fav = { id_favorite, name, url_image, related, user_id };
   const newFavorite = await addFavoriteService(fav);
   return res.status(200).json(newFavorite);
 });
+
 FavoriteRouter.delete('/delete', DeleteValidation, async (req, res) => {
   const { id } = req.body;
   await deleteFavoriteService(id);

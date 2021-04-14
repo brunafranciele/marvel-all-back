@@ -43,6 +43,6 @@ A aplicação conta com quatro rotas para manipulação de dados referentes aos 
 
 ## LINKS
 
-Aplicação: https://marvel-bf.herokuapp.com/
-API da Marvel: https://developer.marvel.com/
-API exclusiva da Aplicação: https://marvel-back-bf.herokuapp.com/
+ - Aplicação: https://marvel-bf.herokuapp.com/
+ - API da Marvel: https://developer.marvel.com/
+ - API exclusiva da Aplicação: https://marvel-back-bf.herokuapp.com/
